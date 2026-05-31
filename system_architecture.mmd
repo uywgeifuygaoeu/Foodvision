@@ -1,0 +1,17 @@
+flowchart LR
+    U["User<br/>Uploads a meal photo"]
+    F["React + Vite Frontend<br/>Upload, preview, charts, UI states"]
+    A["FastAPI Backend<br/>Validation and API routing"]
+    M["PyTorch Model<br/>EfficientNet-B0 or ResNet18"]
+    N[("Nutrition Database<br/>nutrition.csv")]
+    V["Visualization Module<br/>Top-3 bars, radar chart, optional Grad-CAM"]
+
+    U -->|"Food image"| F
+    F -->|"POST /predict"| A
+    A -->|"Preprocessed image tensor"| M
+    M -->|"Top-3 classes and confidence"| A
+    A -->|"Lookup predicted class"| N
+    N -->|"Calories, protein, carbs, fat, fiber"| A
+    A -->|"JSON response"| F
+    F --> V
+    V -->|"Friendly visual insights"| U
