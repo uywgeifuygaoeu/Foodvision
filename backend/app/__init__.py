@@ -1,0 +1,1 @@
+"""FoodVision FastAPI application package."""

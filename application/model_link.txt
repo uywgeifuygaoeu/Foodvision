@@ -1,0 +1,1 @@
+https://github.com/uywgeifuygaoeu/Foodvision/releases/download/v1.0.0/best_model.pth

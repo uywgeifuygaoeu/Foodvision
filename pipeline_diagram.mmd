@@ -1,0 +1,17 @@
+flowchart LR
+    A["Raw Food Images<br/>Food-101"]
+    B["Preprocessing<br/>Resize, RGB, normalization"]
+    C["Data Augmentation<br/>Crop, flip, rotation, color jitter"]
+    D["CNN Model Training<br/>ImageNet transfer learning"]
+    E["Evaluation<br/>Accuracy, Top-3, precision, recall, F1"]
+    F["Inference API<br/>FastAPI /predict"]
+    G["Nutrition Mapping<br/>nutrition.csv"]
+    H["Web Visualization<br/>React result cards and charts"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E -->|"best_model.pth"| F
+    F --> G
+    G --> H

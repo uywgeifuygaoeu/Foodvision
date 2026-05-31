@@ -1,0 +1,21 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      USE_MOCK_MODEL: ${USE_MOCK_MODEL:-false}
+      MODEL_ARCHITECTURE: ${MODEL_ARCHITECTURE:-resnet18}
+      MODEL_PATH: models/best_model.pth
+      CORS_ORIGINS: http://localhost:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/models:/app/models
+
+  frontend:
+    build:
+      context: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"

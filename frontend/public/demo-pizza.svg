@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated pizza demo plate</title>
+  <desc id="desc">A colorful pizza illustration used by FoodVision's built-in demo.</desc>
+  <rect width="760" height="620" fill="#dff4e5"/>
+  <circle cx="380" cy="310" r="252" fill="#fffdf7"/>
+  <circle cx="380" cy="310" r="215" fill="#e7b46b"/>
+  <circle cx="380" cy="310" r="187" fill="#f6cb72"/>
+  <path d="M380 310 541 215A187 187 0 0 1 552 385Z" fill="#f9d884"/>
+  <g fill="#ed735d">
+    <circle cx="318" cy="217" r="29"/>
+    <circle cx="445" cy="215" r="29"/>
+    <circle cx="492" cy="331" r="29"/>
+    <circle cx="404" cy="405" r="29"/>
+    <circle cx="278" cy="382" r="29"/>
+    <circle cx="254" cy="286" r="29"/>
+    <circle cx="377" cy="300" r="29"/>
+  </g>
+  <g fill="#6f9c63">
+    <ellipse cx="355" cy="177" rx="13" ry="23" transform="rotate(-25 355 177)"/>
+    <ellipse cx="470" cy="268" rx="13" ry="23" transform="rotate(52 470 268)"/>
+    <ellipse cx="321" cy="347" rx="13" ry="23" transform="rotate(34 321 347)"/>
+    <ellipse cx="436" cy="367" rx="13" ry="23" transform="rotate(-50 436 367)"/>
+    <ellipse cx="289" cy="258" rx="13" ry="23" transform="rotate(70 289 258)"/>
+  </g>
+  <g fill="#fff2bc">
+    <circle cx="352" cy="257" r="15"/>
+    <circle cx="428" cy="266" r="17"/>
+    <circle cx="351" cy="378" r="16"/>
+    <circle cx="260" cy="333" r="14"/>
+    <circle cx="474" cy="392" r="13"/>
+  </g>
+</svg>

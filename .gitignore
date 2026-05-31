@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# PyTorch models and generated outputs
+*.pth
+*.pt
+outputs/
+data/
+!data/
+data/*
+!data/README.md
+!source_code/outputs/
+source_code/outputs/*
+!source_code/outputs/README.md
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Environment overrides
+.env
+backend/.env
+
+# System files
+.DS_Store
